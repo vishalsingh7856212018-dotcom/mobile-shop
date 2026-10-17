@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Ramkumar Mobile Shop</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "secondary-fixed": "#89f5e7", "on-error-container": "#93000a", "tertiary-fixed-dim": "#bec6e0", "surface-tint": "#3755c3", "surface-dim": "#cbdbf5", "outline-variant": "#c4c5d5", "primary-fixed": "#dde1ff", "on-tertiary-fixed": "#131b2e", "on-primary-fixed": "#001453", "surface-variant": "#d3e4fe", "surface-container-low": "#eff4ff", "tertiary": "#2d3449", "on-background": "#0b1c30", "primary-container": "#1e40af", "background": "#f8f9ff", "surface": "#f8f9ff", "on-secondary-fixed-variant": "#005049", "on-secondary": "#ffffff", "surface-container": "#e5eeff", "surface-container-high": "#dce9ff", "on-secondary-container": "#006f66", "secondary-container": "#86f2e4", "tertiary-container": "#434b60", "on-surface": "#0b1c30", "error": "#ba1a1a", "tertiary-fixed": "#dae2fd", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "inverse-surface": "#213145", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#00201d", "outline": "#757684", "primary-fixed-dim": "#b8c4ff", "on-surface-variant": "#444653", "surface-bright": "#f8f9ff", "surface-container-highest": "#d3e4fe", "secondary": "#006a61", "inverse-primary": "#b8c4ff", "error-container": "#ffdad6", "on-tertiary-container": "#b4bbd5", "on-primary-container": "#a8b8ff", "on-tertiary-fixed-variant": "#3f465c", "secondary-fixed-dim": "#6bd8cb", "on-primary-fixed-variant": "#173bab", "primary": "#00288e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "0.875rem", "space-lg": "1.25rem", "gutter-lg": "1.5rem", "margin": "1rem", "space-xl": "2rem", "margin-lg": "2rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-sm": "0.75rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-36 flex flex-col justify-between"><div class="bg-primary px-margin py-1 flex items-center justify-between text-on-primary font-label-sm text-label-sm overflow-hidden whitespace-nowrap"><div class="flex items-center gap-space-xs truncate"><span class="material-symbols-outlined text-[13px]">location_on</span><span>Main Market, Robertsganj</span><span class="opacity-40">|</span><span class="material-symbols-outlined text-[13px]">call</span><span>+91 98765 43210</span><span class="opacity-40">|</span><span class="text-secondary-fixed font-bold">0% EMI Available</span></div><a class="flex items-center gap-1 bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-label-sm text-label-sm shrink-0" href="https://wa.me/919876543210" target="_blank"><span class="material-symbols-outlined text-[12px]">chat</span><span>WhatsApp</span></a></div><div class="px-margin py-1 flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="Ramkumar Mobile Shop Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOnciuXI_WLybYfnBrTL7JrRFt5oA40FdNAeheLxcGTvjYgBByHnyKLNIVOtvyqJF3jT6DrtvpwmZkuOD6wOSu0TddrAANiEla0YtEuQPPgexzxjp3K90vOKbjCuDHCIJSet5V6rWVgCVlOSL1CUvu2bjjR7gVsxjb8Q3iGeWPY0qyRIpGk3GhrXW-9zQ1IprhzdfeKnuzlhYHppdUciu6nhHbdxZhzQcy0w_yPGEN53w6hIux9GiF"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Ramkumar</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide">Mobile Shop</span></div></div><div class="flex items-center gap-1 shrink-0"><a aria-label="Wishlist" class="w-11 h-11 flex items-center justify-center relative text-on-surface-variant hover:text-primary transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2 right-2 min-w-[16px] h-4 px-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center">3</span></a><a aria-label="Cart" class="w-11 h-11 flex items-center justify-center relative text-on-surface-variant hover:text-primary transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 min-w-[16px] h-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="px-margin pb-2"><div class="h-10 w-full bg-surface-container-low rounded-full flex items-center px-space-md gap-space-sm"><span class="material-symbols-outlined text-outline text-[20px]">search</span><input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm outline-none" placeholder="Search smartphones, accessories, repairs..." type="text"/><button aria-label="Voice Search" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[18px]">mic</span></button><button aria-label="Scan Barcode" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[18px]">qr_code_scanner</span></button></div></div></div></header><main class="flex flex-col relative w-full pt-36 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Horizontal Filter Chips Bar -->
+<div class="w-full px-margin pt-space-sm pb-space-xs overflow-x-auto scrollbar-none flex items-center gap-2">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm flex items-center gap-1.5 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+<span>All Phones</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm hover:bg-surface-container transition-colors">
+      Under ₹15,000
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm hover:bg-surface-container transition-colors">
+      ₹15k - ₹30k
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shrink-0 shadow-sm flex items-center gap-1 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+      Flagship &amp; 5G
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm hover:bg-surface-container transition-colors">
+      Apple iPhone
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm hover:bg-surface-container transition-colors">
+      Samsung Galaxy
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shrink-0 shadow-sm hover:bg-surface-container transition-colors">
+      OnePlus
+    </button>
+</div>
+<!-- Sort & Local Store Pill Bar -->
+<div class="px-margin py-space-sm flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">swap_vert</span>
+<span class="font-bold text-on-surface">Sort:</span>
+<select class="bg-transparent text-on-surface outline-none cursor-pointer pr-1">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Biggest Discount</option>
+</select>
+</div>
+<div class="flex items-center gap-1">
+<button class="bg-surface-container-lowest text-on-surface-variant px-3 py-1.5 rounded-full shadow-sm font-label-sm text-label-sm flex items-center gap-1 hover:text-primary">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>5G Ready</span>
+</button>
+<button class="bg-surface-container text-primary p-1.5 rounded-full shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Robertsganj Local Store Festive Deal Card -->
+<div class="px-margin my-space-xs">
+<div class="w-full bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="w-12 h-12 rounded-xl bg-white/15 backdrop-blur-md flex items-center justify-center shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[28px]">card_giftcard</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1.5">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider font-extrabold">Shop Offer</span>
+<span class="font-label-sm text-label-sm text-on-primary/80">Valid this week</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-primary mt-1 leading-snug">
+            Free Tempered Glass &amp; Premium Back Cover!
+          </h2>
+<p class="font-body-sm text-body-sm text-on-primary/90 mt-0.5">
+            On every 5G phone purchase in Robertsganj showroom. Plus free data transfer!
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Title & Stock Tracker -->
+<div class="px-margin pt-space-md pb-space-xs flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-tight">Handpicked Smartphones</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Live in-store inventory • Instant Robertsganj pickup</p>
+</div>
+<span class="bg-surface-container-high text-primary px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold">
+      8 In Stock
+    </span>
+</div>
+<!-- Smartphones Catalog List -->
+<div class="px-margin py-space-xs flex flex-col gap-space-md">
+<!-- Card 1: Apple iPhone 15 Pro Max -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Flagship Choice
+          </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Save ₹11,000
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Apple iPhone 15 Pro Max Natural Titanium studio shot, front and back sleek titanium edges, vibrant OLED display, ultra clean commercial tech retail showcase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxxMOG-H978E7a2vrX7UAOzysi1X_gORLxTTYvbAbZjTYLT4-_7CpQhWNo1PWaS1mDyV-CtkmWK4XNgM6XD3cH2PKfIBWoT3pdyAVLHFpiT98aKdCieDXBi2KCDGKfV-cW6B6oXup3_svcKZBCDA2GQxHa8lKG2V7NhG8GwON4XRfwgZ7l-xnV89NxLujQDSj1wAY7nKLnzxv6vmiueJdiSVANeZ926OZRsR_FNkSEc2YiJkHCcgRk"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">256 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Apple</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">iPhone 15 Pro Max</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Titanium Natural • A17 Pro</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹1,48,900</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹1,59,900</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+<span class="font-bold">No Cost EMI from ₹12,408/mo</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">published_with_changes</span>
+<span>Old Phone Exchange Up to ₹45,000</span>
+</div>
+<span class="text-secondary font-bold">In-Stock</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20I%20want%20to%20inquire%20about%20iPhone%2015%20Pro%20Max%20Titanium" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Samsung Galaxy S24 Ultra AI -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Galaxy AI
+          </span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            0% Interest EMI
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Samsung Galaxy S24 Ultra Titanium Gray smartphone alongside S Pen stylus, floating product photo on soft grey surface with studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABTImlN3mc4_SogDOtaSKxi-VXjpxZcqLmfgBVzduSgmKj5Lhy045XrZUypsPrA3qpn-egCss4Qw_tVG7B5NoesiQs5Gecmd7AeFcPlIaUdqJRytsUUNz4m62Ti14rR2VxnX9T-xHlxdttV4edPfPv2a3ogRkgBrqGnSE3dobt-p1aOBEDZZv0rxrRjsFr3Tbw-yGwYp745zCJK9MBDtluzcBKoOOZNAS6ZdXGHvf98TDtYiD1IqXd"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">512 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Samsung</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Galaxy S24 Ultra AI</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Titanium Gray • 200MP Zoom</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹1,29,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹1,34,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">local_offer</span>
+<span class="font-bold">0% EMI ₹5,416/mo (24 Mos)</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>Free Samsung Care+ Screen Pack</span>
+</div>
+<span class="text-secondary font-bold">2 Units Left</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20is%20Samsung%20S24%20Ultra%20available%20for%20pickup?" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 3: OnePlus 12 5G -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Best Seller
+          </span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">
+            5400mAh • 100W Fast
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="OnePlus 12 5G Flowy Emerald glossy marble texture back panel with Hasselblad circular camera module, high resolution consumer tech shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRxJNQNG_q1oW7nTY5YM97ZvewbIvrz2l34jIPfuWJylEzO8zD4ldKSBolaEqZVRfyNrYdAMYpRaV1ZMQjR0DcV6P6Zg7JhAz0rx3RTAb2pcfeXh4L_QkCudq61J9fNAEIzrsNSjRmeCYKu7Lf5iC_ULN6MQw-O_on29OqRXldhozY0K2oyC5FGDcD8Phq8Zg3iiS5qknU5BLqx_OsDh5MqLEruwk5FlgbTa4rt7NNfxnebkGY4z8u"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">16GB RAM</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">OnePlus</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">OnePlus 12 5G</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Flowy Emerald • Snapdragon 8 Gen 3</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹64,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹69,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">credit_card</span>
+<span class="font-bold">₹0 Down Payment on Bajaj Finserv</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">published_with_changes</span>
+<span>Exchange Bonus: Flat ₹5,000 Extra</span>
+</div>
+<span class="text-secondary font-bold">Ready</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Ji,%20OnePlus%2012%20Emerald%20price%20with%20exchange?" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Google Pixel 8a -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Google AI Camera
+          </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Best Portrait
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Google Pixel 8a Bay Blue smartphone with rounded corners and horizontal camera visor bar, crisp clean studio white setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGgKmXMHGrq9g4uwFsINQFf3EHSDNRH-ZWNBAi3JaOo0_tYQUgsh-1v_R5daTwEiQMhnYfZZoBXXvdYYzrIgsZmuPFG1Qtz7uvFuu4WPfycD3zhKaLqHz_x7vP3N7Fs7DaYx4slAxb3Uy2Yjgj7dgQEDaTwccy31C4dVlgtDDZ0c5_RTbGZkQo5kefkXb3ksk9veeMq9GDlBJF2qS7qomb1QovTZ3fleko2UAXx7iqY6oxvaAzqku_"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">128 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Google</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Pixel 8a (5G)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bay Blue • Tensor G3 • 7 Yrs OS</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹49,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹52,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+<span class="font-bold">HDFC Card ₹4,000 Instant Cashback</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>Official 1-Year National Warranty</span>
+</div>
+<span class="text-secondary font-bold">In-Stock</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20Pixel%208a%20Bay%20Blue%20availability%20in%20Robertsganj?" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Vivo X100 Pro -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            ZEISS APO Telephoto
+          </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            1-inch Sensor
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Vivo X100 Pro Asteroid Black smartphone with prominent sun halo Zeiss camera ring, studio lighting reflections on premium matte back" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW6sVCVt7evjSo_eriGxNt3Hp31ieTr1IMmkNTyh7FyTVXRvIVVMPiQjmZT4pX0_TQoyfBPf-t48sQ8zG6Zyy4_POGJDJeEyv20emV4f81HKN8kwGW3i5lWYKWuKCidLfhCF3YDAOzot_S3WQ_4wetaLp6izmljRml6IlqXPPdpG9tYyKokY2nZmlwQUd7gfYI1f4HWfKaMfNpZOah-80TzJkd5iXEHEWbKbkYGGyRDBusnNTjA1Tb"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">512 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Vivo</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Vivo X100 Pro (5G)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Asteroid Black • Dimensity 9300</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹89,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹96,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">local_mall</span>
+<span class="font-bold">Free Vivo TWS 3e Earbuds Gift</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">published_with_changes</span>
+<span>Exchange available at showroom</span>
+</div>
+<span class="text-secondary font-bold">Demo Ready</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20can%20I%20test%20Vivo%20X100%20Pro%20camera%20at%20store?" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 6: Realme 12 Pro+ 5G -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Luxury Vegan Leather
+          </span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Under ₹30,000
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Realme 12 Pro Plus Submarine Blue with luxury vegan leather golden fluted bezel camera dial, elegant close-up product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB6w9cYsF7OP7N3jOJhg9GTIqCWIVtc0UsfcGazQ0i6xci_hug-oyRyBOQab1HSc3fhecO0m7a2pYJ79xBLgWtrKFUScC9-U3mSSWl9HqlSIuJLdXWX1pTjFkUgzuBR8_QpKPOoELLQCf2BDEbqcziB_lOfY03hL55TML9VJVz36J7e_2NrTxTcxS1buWnuOpPZXqFvqRgnqR1JJ9xPPbODiixPwym6u6OraK_Rc_XVs2n7YEtID2W"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">256 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Realme</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Realme 12 Pro+ 5G</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Submarine Blue • Periscope Portrait</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹29,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹33,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="font-bold">Bajaj Card ₹2,500/mo Easy EMI</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">store</span>
+<span>Free Screen Protector + Installation</span>
+</div>
+<span class="text-secondary font-bold">Ready</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20I%20want%20to%20book%20Realme%2012%20Pro%2B%205G" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 7: Poco X6 Pro 5G -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Speed Beast
+          </span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">
+            1.4M AnTuTu
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Poco X6 Pro 5G Yellow vegan leather edition back design showing distinctive black camera island, high performance gaming phone presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt1R5W31c0zq_YupHnHDjvIOGM3rA-rFYTlLQ1mK-lZjHob0H9ZLnAA0cZKx4zehn90oXLucKWqEO3sYJmAzs64j5jD3sERt7GKx3g7y5wThElu2m0lrIDseGsAhf6T7XM2217A8o86HJVXZqF73GDqWPyZCtmXJfJIDjVvFfcia32FejPc17zhbSCac-nv38TTHGZlnrne1vCiDxU0HxbQfG9xmvGCWaZtwrn7jTXrNAsvWl6qMrw"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">256 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Poco</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Poco X6 Pro 5G</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Racing Yellow • Dimensity 8300 Ultra</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹25,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹28,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="font-bold">₹0 Down Payment TVS Credit</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">published_with_changes</span>
+<span>Old Phone Exchange Accepted</span>
+</div>
+<span class="text-secondary font-bold">Fast Selling</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20Poco%20X6%20Pro%20Yellow%20in%20stock?" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+<!-- Card 8: Moto Edge 50 Fusion -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-1.5">
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            IP68 Water Safe
+          </span>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            Curved pOLED
+          </span>
+</div>
+<button aria-label="Add to Wishlist" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex gap-space-md items-center">
+<div class="w-28 h-32 rounded-xl bg-surface-container flex items-center justify-center p-2 shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-contain" data-alt="Motorola Moto Edge 50 Fusion Marshmallow Blue textured back with curved border screen, modern clean smartphone product visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCekUwSJs5CC8gn7VW2Gzhn0evCN5KvwnO6XNrD_INR8mFAM8vcP3a6DOB9JTE3I7xnSBZTGLk6UC_8_IzigBxxhGOJsxUxq9vIiSgi5TaFjqZKNrKiXxeHpqKU9oRP3f2N9_YixSPGfjDen403YdhppteGWt1jsdc83u1dokmbrYywR6TfDo02Rb27pYA8o04pHeofwWartGLg6a4HY8fab7ffM7RLBt66AOEWf-EQ3L2zF68g2tYc"/>
+<span class="absolute bottom-1 left-1 bg-on-surface/80 text-on-primary font-label-sm text-[9px] px-1 rounded">128 GB</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Motorola</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Moto Edge 50 Fusion</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Marshmallow Blue • Sony LYTIA 700C</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">₹22,999</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹25,999</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">credit_card</span>
+<span class="font-bold">No Cost EMI ₹1,916/mo (12 Mos)</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>Clean Android OS • Zero Ads</span>
+</div>
+<span class="text-secondary font-bold">In-Stock</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-10 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%20Ramkumar%20Shop,%20Moto%20Edge%2050%20Fusion%20available?" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Store Pickup</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Finance & EMI Partners Trust Strip -->
+<div class="px-margin pt-space-lg pb-space-sm">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Zero Down Payment EMI Available</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Get instant approval in 5 minutes at Robertsganj shop</p>
+</div>
+</div>
+</div>
+<!-- Partner Badge Grid -->
+<div class="grid grid-cols-5 gap-2 pt-1">
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[22px] text-primary">savings</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold mt-1">Bajaj Finserv</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[22px] text-secondary">credit_card</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold mt-1">TVS Credit</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[22px] text-primary-container">home_repair_service</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold mt-1">Home Credit</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[22px] text-primary">account_balance</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold mt-1">HDFC Bank</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[22px] text-secondary">domain</span>
+<span class="font-label-sm text-[10px] text-on-surface font-bold mt-1">SBI Finance</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span>Aadhaar + PAN only</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+<span>0% Processing Fee</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Direct Owner Contact / Trust Bar -->
+<div class="px-margin py-space-sm">
+<div class="bg-gradient-to-r from-tertiary to-inverse-surface text-on-tertiary rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px] text-secondary-fixed">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold tracking-wide uppercase">Need help choosing?</span>
+<span class="font-headline-sm text-headline-sm text-on-tertiary">Call Ramkumar Ji Directly</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container">+91 98765 43210 • Robertsganj</span>
+</div>
+</div>
+<a class="h-10 px-4 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1 shrink-0 shadow-md active:scale-95 transition-transform" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Now</span>
+</a>
+</div>
+</div>
+<!-- Trust Assurance Pillars -->
+<div class="px-margin pt-space-xs pb-space-lg grid grid-cols-2 gap-2">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[12px] text-on-surface leading-tight">100% Genuine</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Brand Sealed Pack</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">storefront</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[12px] text-on-surface leading-tight">2-Hour Pickup</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Main Market Shop</span>
+</div>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-1"><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-14 transition-colors text-primary font-bold" data-path="smartphones" href="#"><span class="material-symbols-outlined text-[22px]">smartphone</span><span class="font-label-sm text-label-sm mt-0.5">Phones</span></a><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-primary transition-colors" data-path="accessories" href="#"><span class="material-symbols-outlined text-[22px]">headphones</span><span class="font-label-sm text-label-sm mt-0.5">Accessories</span></a><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-primary transition-colors" data-path="repairs-and-services" href="#"><span class="material-symbols-outlined text-[22px]">build</span><span class="font-label-sm text-label-sm mt-0.5">Repairs</span></a><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-primary transition-colors" data-path="store-info" href="#"><span class="material-symbols-outlined text-[22px]">store</span><span class="font-label-sm text-label-sm mt-0.5">Store</span></a></div></nav></body></html>
